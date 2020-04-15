@@ -1,0 +1,28 @@
+#do github things
+# usually start with "git pull" to get all updates
+#git add -A and git commit all throughout day, then get push at end to send up to github
+#initialize local directory as Git repository
+
+git init
+
+#add stuff to staging area
+
+git add
+git add -A (adds everything in directory)
+
+#save stuff in repository
+
+git commit
+
+#put stuff onto GitHub, first add remote named origin (or whatever, like e.g. DTI or TBSS) so that #local repository can access github, #so go to github.com and make repository and get that url and #connect it to local repository with, go to github.com and hit clone to get url after repo is made
+
+git remote add TBSS https://github.com/begnocjp/DTI.git
+
+# check clone url
+git remote -v
+
+#add that repo to GitHub 
+
+git push TBSS master
+
+
